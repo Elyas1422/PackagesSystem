@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="550.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="App.paymentGatewayCon">
+   <children>
+      <AnchorPane prefHeight="550.0" prefWidth="800.0" styleClass="addPane" stylesheets="@style.css">
+         <children>
+            <Text fx:id="paymentTitle" fill="WHITE" layoutX="71.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment: 200Sar" wrappingWidth="712.8033447265625">
+               <font>
+                  <Font size="49.0" />
+               </font>
+            </Text>
+            <TextField layoutX="71.0" layoutY="175.0" prefHeight="25.0" prefWidth="268.0" />
+            <Text fill="WHITE" layoutX="71.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Card Number:" wrappingWidth="102.13671875">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="71.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expiration Date " wrappingWidth="102.13671875">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField layoutX="71.0" layoutY="238.0" prefHeight="25.0" prefWidth="268.0" />
+            <TextField layoutX="71.0" layoutY="304.0" prefHeight="25.0" prefWidth="81.0" />
+            <Text fill="WHITE" layoutX="71.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CVV:" wrappingWidth="102.13671875">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Button fx:id="submitButton" layoutX="71.0" layoutY="357.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" styleClass="add-btn" stylesheets="@style.css" text="Submit" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

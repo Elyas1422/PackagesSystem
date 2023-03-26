@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.ShipSceneController">
+   <children>
+      <Button fx:id="backShipManage" layoutX="26.0" layoutY="351.0" mnemonicParsing="false" onMouseClicked="#pressBackShipManage" prefHeight="32.0" prefWidth="80.0" text="Back" />
+      <Label layoutX="22.0" layoutY="62.0" text="Enter Package number:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="packNumber" layoutX="182.0" layoutY="59.0" prefHeight="26.0" prefWidth="247.0" promptText="Only five numbers" />
+      <Label layoutX="86.0" layoutY="92.0" text="Enter weight:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="packWeight" layoutX="182.0" layoutY="89.0" prefHeight="26.0" prefWidth="247.0" />
+      <Label layoutX="63.0" layoutY="126.0" text="Enter dimensions: ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="packWidth" layoutX="182.0" layoutY="122.0" prefHeight="26.0" prefWidth="75.0" promptText="width" />
+      <TextField fx:id="packHeight" layoutX="266.0" layoutY="122.0" prefHeight="26.0" prefWidth="75.0" promptText="height" />
+      <TextField fx:id="PackDepth" layoutX="354.0" layoutY="121.0" prefHeight="26.0" prefWidth="75.0" promptText="depth" />
+      <DatePicker fx:id="packDate" layoutX="182.0" layoutY="158.0" prefHeight="26.0" prefWidth="248.0" />
+      <Label layoutX="89.0" layoutY="162.0" text="Choose date:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="fCheck" layoutX="189.0" layoutY="231.0" mnemonicParsing="false" onMouseClicked="#pressFragile" text="Fragile" />
+      <CheckBox fx:id="cCheck" layoutX="274.0" layoutY="231.0" mnemonicParsing="false" onMouseClicked="#pressChemical" text="Chemical" />
+      <CheckBox fx:id="lCheck" layoutX="383.0" layoutY="231.0" mnemonicParsing="false" onMouseClicked="#pressLiquid" text="Liquid" />
+      <Label layoutX="30.0" layoutY="230.0" text="Apply shipment types">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="194.0" text="Enter status:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="packStatus" layoutX="182.0" layoutY="191.0" prefHeight="26.0" prefWidth="247.0" />
+      <TextField fx:id="packMaterial" editable="false" layoutX="166.0" layoutY="261.0" prefHeight="26.0" prefWidth="75.0" promptText="Material" />
+      <TextField fx:id="packRisk" editable="false" layoutX="266.0" layoutY="261.0" prefHeight="26.0" prefWidth="75.0" promptText="Risk Type" />
+      <TextField fx:id="packVolume" editable="false" layoutX="366.0" layoutY="261.0" prefHeight="26.0" prefWidth="75.0" promptText="Volume" />
+      <Label layoutX="39.0" layoutY="298.0" text="Pick destination ID">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="packInsert" layoutX="494.0" layoutY="350.0" mnemonicParsing="false" onMouseClicked="#pressInsert" prefHeight="33.0" prefWidth="78.0" text="Submit" />
+      <ComboBox fx:id="idChoice" layoutX="166.0" layoutY="295.0" prefHeight="26.0" prefWidth="277.0" />
+      <Label fx:id="fail" layoutX="448.0" layoutY="302.0" prefHeight="38.0" prefWidth="171.0" text="    ." textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

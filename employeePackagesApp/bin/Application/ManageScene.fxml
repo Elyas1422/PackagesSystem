@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.MainSceneController">
+   <children>
+      <Button fx:id="logout" layoutX="504.0" layoutY="339.0" mnemonicParsing="false" onAction="#pressLogout" text="Logout" />
+      <Button fx:id="manageShip" layoutX="166.0" layoutY="72.0" mnemonicParsing="false" onAction="#pressShipManage" prefHeight="49.0" prefWidth="269.0" text="Manage customer shipment" />
+      <Button fx:id="manageCustomer" layoutX="166.0" layoutY="151.0" mnemonicParsing="false" onMouseClicked="#manageCustomerPage" prefHeight="49.0" prefWidth="269.0" text="Manage customer" />
+      <Button fx:id="generateReport" layoutX="166.0" layoutY="225.0" mnemonicParsing="false" onMouseClicked="#generateReportPage" prefHeight="49.0" prefWidth="269.0" text="Generate report" />
+      <Button fx:id="sendNotfi" layoutX="166.0" layoutY="290.0" mnemonicParsing="false" onMouseClicked="#notfiPage" prefHeight="49.0" prefWidth="269.0" text="Send Notification" />
+   </children>
+</AnchorPane>

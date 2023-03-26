@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.ShipSceneController">
+   <children>
+      <Label layoutX="213.0" layoutY="48.0" prefHeight="32.0" prefWidth="175.0" text="choose operation">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Button fx:id="addPackPage" layoutX="31.0" layoutY="148.0" mnemonicParsing="false" onMouseClicked="#pressAddPage" prefHeight="72.0" prefWidth="131.0" text="Add">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font></Button>
+      <Button fx:id="backManage" layoutX="16.0" layoutY="341.0" mnemonicParsing="false" onMouseClicked="#pressBackManage" prefHeight="32.0" prefWidth="80.0" text="Back" />
+      <Button fx:id="editPack" layoutX="235.0" layoutY="148.0" mnemonicParsing="false" onMouseClicked="#editPackPage" prefHeight="72.0" prefWidth="131.0" text="Edit">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Button>
+      <Button fx:id="deletePage" layoutX="430.0" layoutY="148.0" mnemonicParsing="false" onMouseClicked="#pressDeletePage" prefHeight="72.0" prefWidth="143.0" text="Delete">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
